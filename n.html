@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>header example</title>
+    <style>
+      body{
+        color:white
+      }
+    </style>
+    <script>
+      let variableName = 1;
+      function a(){
+        const cb = document.getElementById('check');
+        const cb1 = document.getElementById('check1');
+        if (cb.checked){
+          document.body.style.color = '#aa0000'
+        }else if(cb1.checked){
+        document.body.style.color = '#00FF00'
+        }
+        if(cb1.checked && cb.checked){
+          document.body.style.color = '#cccc00'
+        }
+          if(!(cb1.checked || cb.checked)){
+          document.body.style.color = '#aaaaaa'
+        }
+      }
+    </script>
+    <script>
+      function b(){
+        let lol = prompt('hi', '');
+        document.body.style.color = lol
+      }
+    </script>
+  </head>
+  <body>
+    <header><h6>h6</h6><p>
+    <h5>h5</h5><p>
+    <h4>h4</h4><p>
+    <h3>h3</h3><p>
+    <h2>h2</h2><p>
+    <h1>h1</h1><p></header>
+    <main>
+    <input type="button" value="input(which #)" onclick="b();" >
+    red?
+    <input type="checkbox" id="check">
+    OR GREEN
+    <input type="checkbox" id="check1">
+    <input type="button" value="change" onclick="a();" ></main>
+    <footer></footer>
+  </body>
+</html>
