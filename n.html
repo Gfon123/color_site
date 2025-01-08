@@ -9,7 +9,6 @@
       }
     </style>
     <script>
-      let variableName = 1;
       function a(){
         const cb = document.getElementById('check');
         const cb1 = document.getElementById('check1');
@@ -28,8 +27,15 @@
     </script>
     <script>
       function b(){
-        let lol = prompt('hi', '');
+        let lol = prompt('hi', 'it is color input');
         document.body.style.color = lol
+      }
+      function c(){
+        let exit = confirm("Exit?");
+        if (exit){
+          alert("goodbye")
+          window. close()
+      }
       }
     </script>
   </head>
@@ -47,6 +53,8 @@
     OR GREEN
     <input type="checkbox" id="check1">
     <input type="button" value="change" onclick="a();" ></main>
+    <input type="button" value="exit" onclick="c();" ></main>
+
     <footer></footer>
   </body>
 </html>
